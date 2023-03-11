@@ -1,0 +1,15 @@
+.header {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list-item {
+    margin-left: 25px;
+  }
+
+  &__link-button {
+    width: 50px;
+    height: 40px;
+  }
+}
