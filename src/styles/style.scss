@@ -7,17 +7,25 @@ body {
 }
 
 .header {
+  padding: 6px;
+
+  &__navigation {
+    display: flex;
+    justify-content: end;
+    padding: 0px 4px 0px 32px;
+  }
+
   &__list {
     display: flex;
     align-items: center;
   }
 
   &__list-item {
-    margin-left: 25px; // temp
     font-size: $font-size-small;
   }
 
   &__link {
+    margin-right: 15px;
     text-decoration: none;
     color: $color-regular-text;
 
@@ -26,7 +34,11 @@ body {
     }
   }
 
-  &__link-button {
+  &__button-wrapper {
+    padding: 4px;
+  }
+
+  &__button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,11 +51,11 @@ body {
     background-color: inherit;
 
     &:hover {
-      background-color: red;
+      background-color: $color-header-buttons-hover;
     }
   }
 
-  &__link-button-image {
+  &__button-image {
     &--menu {
       width: 24px;
       height: 24px;
